@@ -4,9 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAAD</title>
+    <title>Saad</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        body {
+        font-family: kalpurush, nikosh, sans-serif, Georgia, 'Times New Roman', Times, serif;
+        }
+        /* Style the header */
+        header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+         float: left;
+         width: 30%;
+         height: 300px; /* only for demonstration, should be removed */
+         background: #ccc;
+         padding: 20px;
+        }
+            /* Style the list inside the menu */
+        nav ul {
+        list-style-type: none;
+        padding: 0;
+        }
+        article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px; /* only for demonstration, should be removed */
+        }
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+    </style>
+        
 </head>
 <body>
+    <h2>মোঃ আব্দুল্লাহ সাদ</h2>
+<p>আসসালামু আলাইকুম, সবাই আমাকে সাদ নামে ডাকে।</p>
+<p>সবাই ভালো থাকবেন।</p>
+
+
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://www.facebook.com/shanjii.sadi">আম্মু</a></li>
+      <li><a href="https://www.facebook.com/talha.bzs/">আব্বু</a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=100006081196164">দাদী</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>কুয়াকাটা সফর</h1>
+    <p>এইতো কয়েকদিন আগে আমি কুয়াকাটা গিয়েছিলাম</p>
     
+   
+  </article>
+</section>
+
+<footer>
+  <p>কুয়াকাটা সফরের ছবি</p>
+</footer>
+
+<figure>
+    <img src="F:\Project\test\img\1a.jpg" alt="1a" width="500" height="600">
+    <figcaption> চিত্র ১- কুয়াকাটা সমুদ্র সৈকতে ঘোড়ার পিঠে </figcaption>
+</figure>
+    
+
+<figure>
+    <img src="F:\Project\test\img\2.jpg" alt="1a" width="600" height="500">
+    <figcaption> চিত্র ২- আম্মু </figcaption>
+</figure>
+
+<figure>
+    <img src="F:\Project\test\img\3.jpg" alt="1a" width="600" height="500">
+    <figcaption> চিত্র ৩- আমরা সবাই </figcaption>
+</figure>
+    
+<figure>
+    <img src="F:\Project\test\img\4.jpg" alt="1a" width="600" height="500">
+    <figcaption> চিত্র ৪- বাবা মা এবং আমি </figcaption>
+</figure>
+
+<figure>
+    <img src="F:\Project\test\img\5.jpg" alt="1a" width="500" height="600">
+    <figcaption> চিত্র ৫- আমি এবং দাদী </figcaption>
+</figure>
 </body>
 </html>
